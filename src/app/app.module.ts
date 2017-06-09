@@ -13,8 +13,8 @@ import { FormsModule }  from '@angular/forms';
   declarations: [
     AppComponent,
     AnimalListComponent,
-    NewAnimalComponent,
     EditAnimalComponent,
+    NewAnimalComponent,
     CompletenessPipe
   ],
   imports: [

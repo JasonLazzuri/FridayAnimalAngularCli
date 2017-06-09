@@ -1,9 +1,9 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
-import { Animal } from '../animal';
+import { Animal } from '../animal.model';
 
 
 @Component({
-  selector: 'app-animal-list',
+  selector: 'animal-list',
   templateUrl: './animal-list.component.html',
   styleUrls: ['./animal-list.component.css']
 })

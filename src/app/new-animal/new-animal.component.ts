@@ -1,8 +1,8 @@
 import { Component, Output, EventEmitter, OnInit } from '@angular/core';
-import { Animal } from '../animal';
+import { Animal } from '../animal.model';
 
 @Component({
-  selector: 'app-new-animal',
+  selector: 'new-animal',
   templateUrl: './new-animal.component.html',
   styleUrls: ['./new-animal.component.css']
 })
