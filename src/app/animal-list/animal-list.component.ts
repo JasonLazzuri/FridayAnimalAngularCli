@@ -27,10 +27,10 @@ export class AnimalListComponent implements OnInit {
 // }
 
  ageColor(currentAnimal){
-   if (currentAnimal.age >= 5){
-     return "bg-danger";
-   } else if (currentAnimal.age <5) {
-     return  "bg-warning";
+   if (currentAnimal.age >= 2){
+     return "bg-warning";
+   } else if (currentAnimal.age <= 2) {
+     return  "bg-success";
    } else {
      return "bg-success";
    }

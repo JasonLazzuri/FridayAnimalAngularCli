@@ -4,7 +4,7 @@
    <input #newSpecies>
  </div>
  <div>
-   <label>name:</label>
+   <label>Name:</label>
    <input #newName>
  </div>
  <div>
@@ -36,5 +36,5 @@
     <option> Male </option>
     <option> Female </option>
   </select>
-  <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
+  <button class="waves-effect waves-light btn" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
   </div>

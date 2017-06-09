@@ -13,14 +13,14 @@ export class CompletenessPipe implements PipeTransform {
     var output: Animal[] = [];
     if(desiredCompleteness === "oldAnimals") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].age >= 5) {
+        if (input[i].age >= 2) {
           output.push(input[i]);
         }
       }
       return output;
     } else if (desiredCompleteness === "youngAnimals") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].age < 5) {
+        if (input[i].age < 2) {
           output.push(input[i]);
         }
       }

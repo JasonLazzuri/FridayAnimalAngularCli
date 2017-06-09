@@ -1,11 +1,21 @@
+
 <select (change)="onChange($event.target.value)">
-  <option value="allAnimals">All Animals</option>
-  <option value="oldAnimals">Animals Older than 5 </option>
-  <option value="youngAnimals" selected="selected">Animals Younger than 5</option>
+  <option value="allAnimals" selected="selected">All Animals</option>
+  <option value="oldAnimals">Animals Older than 2 </option>
+  <option value="youngAnimals">Animals Younger than 2</option>
 </select>
 
-<ul>
-  <li [class]="ageColor(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | completeness:filterByCompleteness">{{currentAnimal.species}} {{currentAnimal.name}} {{currentAnimal.diet}} {{currentAnimal.location}} {{currentAnimal.caretakers}} {{currentAnimal.sex}} {{currentAnimal.likes}} {{currentAnimal.dislikes}}
-    <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
-  </li>
-</ul>
+  <ul class="collapsible" data-collapsible="accordion" *ngFor="let currentAnimal of childAnimalList | completeness:filterByCompleteness">
+    <div class="collapsible-header"><li>Species:{{currentAnimal.species}}</li></div>
+    <div class="collapsible-body">
+      <li>Name:{{currentAnimal.name}}</li>
+      <li>Age:{{currentAnimal.age}}</li>
+      <li>Diet:{{currentAnimal.diet}}</li>
+      <li>Current Location:{{currentAnimal.location}}</li>
+      <li>Number Of Caretakers Needed: {{currentAnimal.caretakers}}</li>
+      <li>Sex: {{currentAnimal.sex}}</li>
+      <li>Likes:{{currentAnimal.likes}}</li>
+      <li>Dislikes:{{currentAnimal.dislikes}}</li>
+    </div>
+    <button class="waves-effect waves-light btn" (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
+  </ul>
