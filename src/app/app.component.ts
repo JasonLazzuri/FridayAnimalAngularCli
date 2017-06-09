@@ -7,6 +7,7 @@ import { Animal } from './animal';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
 
   masterAnimalList: Animal[] = [
