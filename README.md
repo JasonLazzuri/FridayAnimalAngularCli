@@ -1,3 +1,16 @@
+#What pages am I going to need-
+	index page- 
+	animal list page- view everything about those animals 
+	use pipe to sort young and old animals by age
+	Click the animal to be able to edit its name age or number of caretakers
+	
+
+#style-
+	Going with the zoo theme I think I'll try to find something Zootopia theme for the banner to have for each page.
+  I might try to get modals working
+  I am probably going to use Angular CLI in order to get it all working and organize things better
+
+
 # ZooApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
