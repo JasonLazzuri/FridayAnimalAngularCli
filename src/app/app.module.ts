@@ -7,6 +7,8 @@ import { EditAnimalComponent } from './edit-animal/edit-animal.component';
 import { NewAnimalComponent } from './new-animal/new-animal.component';
 import { CompletenessPipe } from './completeness.pipe';
 import { FormsModule }  from '@angular/forms';
+import { MaterializeModule } from 'angular2-materialize';
+
 
 
 @NgModule({
@@ -19,7 +21,8 @@ import { FormsModule }  from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    MaterializeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

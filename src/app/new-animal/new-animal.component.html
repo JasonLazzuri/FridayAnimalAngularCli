@@ -32,9 +32,9 @@
      <input #newDislikes>
   </div>
  <div>
-   <select #newSex>
-    <option> Male </option>
-    <option> Female </option>
-  </select>
-  <button class="waves-effect waves-light btn" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
+     <select materialize="material_select" #newSex>
+      <option> Male </option>
+      <option> Female </option>
+      </select>
   </div>
+  <button class="waves-effect waves-light btn" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
