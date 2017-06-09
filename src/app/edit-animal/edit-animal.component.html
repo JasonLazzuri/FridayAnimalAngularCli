@@ -22,8 +22,10 @@
   <label>Species: </label>
   <input type="text" [(ngModel)]="childSelectedAnimal.species">
   <br>
-  <input type="radio" [(ngModel)]="childSelectedAnimal.Sex">Male<br>
-  <input type="radio" [(ngModel)]="childSelectedAnimal.Sex">Female<br>
+  <select materialize="material_select" #newSex>
+     <option [(ngModel)]="childSelectedAnimal.Sex"> Male </option>
+     <option [(ngModel)]="childSelectedAnimal.Sex"> Female </option>
+  </select>
   <br>
   <label>Likes: </label>
   <input type="text" [(ngModel)]="childSelectedAnimal.likes">

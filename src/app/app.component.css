@@ -1,4 +1,13 @@
 img{
-  width: 1000px;
-  padding: 50px;
+  width: 100%;
+}
+
+h2{
+  font-family:'Pacifico', cursive;
+  text-align: center;
+}
+
+.container{
+  background-color: lightgrey;
+  padding: 20px;
 }
