@@ -1,3 +1,40 @@
-<p>
-  new-animal works!
-</p>
+<h1>Add a New Animal</h1>
+ <div>
+   <label>Species:</label>
+   <input #newSpecies>
+ </div>
+ <div>
+   <label>name:</label>
+   <input #newName>
+ </div>
+ <div>
+   <label>Age:</label>
+   <input #newAge>
+ </div>
+ <div>
+   <label>Diet:</label>
+   <input #newDiet>
+ </div>
+ <div>
+   <label>Location:</label>
+   <input #newLocation>
+ </div>
+ <div>
+    <label>Caretakers:</label>
+    <input #newCaretakers>
+  </div>
+  <div>
+     <label>Likes:</label>
+     <input #newLikes>
+  </div>
+  <div>
+     <label>Dislikes:</label>
+     <input #newDislikes>
+  </div>
+ <div>
+   <select #newSex>
+    <option> Male </option>
+    <option> Female </option>
+  </select>
+  <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
+  </div>
