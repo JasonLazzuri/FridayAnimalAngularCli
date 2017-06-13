@@ -9,6 +9,9 @@
   I might try to get modals working
   I am probably going to use Angular CLI in order to get it all working and organize things better
 
+# Future Things to Implement
+	I would like to hide the form page or have it link to a different page in order to show the form.
+  I would like to have the form show up in a modal that pops up on the page. 
 
 # ZooApp
 
